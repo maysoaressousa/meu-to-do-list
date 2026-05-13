@@ -1,0 +1,22 @@
+body {
+font: arial;
+background-color: #f4f4f4;
+background-position: center;
+background-size: cover;
+}
+
+.app {
+  max-width: fit-content;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
