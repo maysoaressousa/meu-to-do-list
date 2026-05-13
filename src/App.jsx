@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import Todo from './componets/Todo'
+import Todo from './components/Todo'
+import TodoForm from './components/TodoForm';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -29,20 +30,13 @@ function App() {
       <h1>Minha Lista de Tarefas</h1>
       <div className='todo-list'>
         {todos.map((todo) => (
-          <div className='todo' key={todo.id}>
-            <div className='content'>
-              <p>{todo.text}</p>
-              <p className='category'>({todo.category})</p>
-            </div>
-            <div>
-              <button>Completar</button>
-              <button>x</button>
-            </div>
-          </div>
+          <Todo todo={todo}/>
+          
         ))}
       </div>
+      <TodoForm />
     </div>
-  )
+  );
 }
 
 export default App;

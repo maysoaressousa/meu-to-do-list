@@ -20,3 +20,37 @@ h2 {
   text-align: center;
   margin-top: 20px;
 }
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+.todo-form {
+  padding-bottom: 1.5 rem;
+}
+
+input, select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 3%;
+}
+
+.complete {
+  background-color: #4CAF50;
+}
+
+.remove {
+  background-color: #f44336;
+}
